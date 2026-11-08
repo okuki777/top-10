@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "declaration": false,
+    "sourceMap": false,
+    "removeComments": false,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"]
+}

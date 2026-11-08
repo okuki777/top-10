@@ -1,0 +1,45 @@
+{
+  "name": "dsh-github-top10",
+  "version": "0.1.0",
+  "description": "GitHub 星标 Top 10 周报：fetch_github_top10 工具调用 GitHub Search API，输出 Markdown 表格",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "github",
+    "weekly-report"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "patches/bundle.yaml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./patches/bundle.yaml"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.1.7-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.1.7-rc.2",
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.2"
+  }
+}

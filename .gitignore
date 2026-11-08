@@ -1,0 +1,8 @@
+# 依赖
+node_modules/
+.npm-cache/
+pnpm-lock.yaml
+
+# 编译中间产物（lib/ 不忽略：lib/index.js 是随包分发的产物）
+*.tsbuildinfo
+*.log

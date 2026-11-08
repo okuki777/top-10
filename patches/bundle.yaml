@@ -1,0 +1,9 @@
+# dsh-github-top10 的 bundle patch（package.json 的 dsh.bundle.patch 指向本文件）。
+#
+# 作用：向 profile 的组合树 insert 一行 Host 插件。
+#   id   行标识，全树唯一；之后可用同 id 的 patch 覆盖它（例如 disabled: true 关掉）。
+#   name 插件包名，从 profile 的 node_modules 解析；本包由 dsh 从安装处/ profile 解析，
+#        因此这一行不写 config（插件没有 Config 导出）。
+- insert:
+    - id: github-top10
+      name: dsh-github-top10
